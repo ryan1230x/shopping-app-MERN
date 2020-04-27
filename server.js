@@ -19,5 +19,5 @@ const shoppingCart = require('./routes/shoppingCart');
 // Create API routes
 app.use('/api/v1/shoppingcart', shoppingCart);
 
-const PORT = process.env.PORT || 4200;
+const PORT = process.env.PORT || 5000;
 app.listen(PORT, console.log(`Server Running in ${process.env.MODE} Mode on Port ${process.env.PORT}`.yellow.bold));

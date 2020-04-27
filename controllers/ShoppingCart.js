@@ -41,7 +41,7 @@ exports.addShoppingCart = async(req, res) => {
         } else {
             return res.status(500).json({
                 success:false,
-                data:'Server Error'
+                error:'Server Error'
             });
         }        
     }
@@ -68,7 +68,7 @@ exports.deleteShoppingCart = async(req, res) => {
     } catch (err) {
         return res.status(500).json({
             success:false,
-            data:'Server Error'
+            error:'Server Error'
         });
     }
 }
